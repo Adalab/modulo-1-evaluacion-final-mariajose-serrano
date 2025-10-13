@@ -1,0 +1,14 @@
+.root {
+}
+
+.title {
+}
+
+.container {
+  display: block;
+  border: solid darkblue;
+}
+
+.child {
+  border: solid;
+}
