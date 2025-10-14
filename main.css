@@ -1,14 +1,22 @@
-.root {
+/*list-style: none;  QUITA LOS PUNTITOS DEL LISTADO
+ text-decoration: none; QUITA LA LINEA QUE SALE DE ABAJO DE LOS ENLACES*/
+
+.burguer-menu {
+  background: none; /* sin fondo */
+  border: none; /* sin borde */
+  padding: 0; /* quita relleno extra */
+  cursor: pointer; /* :apuntando_hacia_arriba_2: Truqui extra: el puntero cambia al pasar por encima */
+  position: absolute;
 }
 
-.title {
+/* El hero debe ser maquetado con flexbox y debe ocupar el */
+.hero-content {
 }
 
-.container {
-  display: block;
-  border: solid darkblue;
+/*VERSION TABLET: desde 768px en adelante */
+@media (min-width: 768px) {
 }
 
-.child {
-  border: solid;
+/* VERSIÓN DESKTOP: Desde 1024px en adelante*/
+@media (min-width >= 1024px) {
 }

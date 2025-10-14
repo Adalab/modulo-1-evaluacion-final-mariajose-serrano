@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <!-- 1. Creo repo en Github, me bajo las imagenes y lanzo el starter kit -->
 <!-- 2. En la terminal haogo npm install y npm run dev -->
 <!--  Tengo los diseños de Zeplin en la página de Zeplin -->
 
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Promo 58. Modulo 1. Evaluación final.</title>
   <!-- 3. Vamos a enlazar nuestro htnml con nuetsro fichero CSS.  -->
   <link rel="stylesheet" href="./main.css" />
@@ -16,13 +14,84 @@
 
 <body>
   <header>
-    <h1 class="title">Lección 1.3. Flexbox>/h1>
-      <!-- 4..  -->
+    <!--1. Meto aqui el menu hamburguesa que debe estar a la izq.
+      y debe tener un enlace a la web de adalab https://adalab.es -->
+    <a href="https://adalab.es"></a> <img class="burguer-menu" src="./images/ico-menu.svg" alt="burguer-menu">
+    class="hero-button">
+
+
   </header>
-  <section class="container">
-    <article></article>
-    <article></article>
-  </section>
+  <main>
+    <section class="hero" id="hero">
+      <img class="hero-img" src="./images/cover.jpeg" alt="hero background" /> <!--1 Poner en el CSS BACKGROUND-IMAGE: url(donde tengo la img en mi carpeta ./)
+    -->
+      <Titulo>COMIENZOS COMPARTIDOS</Titulo>
+      <span>Todo lo que necesitan para volver al cole con ilusión</span>
+      <img class="icono-scroll-down" src="./images/ico-scroll-down.svg" alt="icono-scroll-down">
+      <!-- aqui la flecha ha de llevar a Vuelta al cole-->
+
+    </section>
+
+    <section>
+      <span>HISTORIAS, MODA Y ROPA DEPORTIVA</span>.
+      <!-- En esta seccion añadir clase al span y al boton y a la seccion-->
+
+      <h2>TU TIENDA DE DEPORTE</h2>
+
+      <p>El deporte nos mantiene en forma. Nos mantiene alerta. Nuestra ropa deportiva para hombre y mujer te ofrece las
+        últimas tecnologías, a la altura de tu rendimiento, para que superes tu mejor marca personal.</p>
+
+      <!-- Aqui pongo el Boton de Comprar-->
+
+    </section> <!-- HAY QUE DARLE CLASE A LA SECCION-->
+
+    <a href="https://adalab.es" class="Comprar-button">Comprar</a></section>
+
+    <!--Aqui pongo las 3 fotos de la sección junto con el botón empezar ahora
+  y el icono o botón de la flecha  -->
+    <section>
+      <span>¡Prepáralos con tus marcas favoritas!</span>
+      <h3>VUELTA AL COLE</h3>
+
+
+      <article>
+        <img class="mochilas-escolares" src="./images/lpbts-mod05-img01-desk.png" alt="mochilas-escolares" />
+        <span>Mochilas escolares</span>
+      </article>
+      <!-- Esto es el span con el producto-->
+
+      <article>
+        <img class="estuches" src="./images/lpbts-mod05-img04-mob.png" alt="estuches" />
+        <span>Mochilas escolares</span>
+      </article>
+      <!-- Esto es el span con el producto-->
+
+      <article><img class="bolsas de deporte" src="./images/lpbts-mod05-img03-mob.png" alt="bolsas de deporte" />
+        <span>Bolsas de deporte</span>
+      </article>
+      <!-- Esto es el span con el producto-->
+
+    </section>
+  </main>
+
+  <footer> <!-- DAR CLASE A FOOTER -->
+    <img src="/images/ico-arrow.svg" alt="arrow-up">
+    <ul>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+    </ul>
+    <ul>
+      <li><a href="">TWITTER</a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+    </ul>
+    <span>&copy;2023</span>
+    <span>weCORAZON</span>
+
+  </footer>
 
 
 </body>
