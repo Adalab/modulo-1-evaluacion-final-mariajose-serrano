@@ -1,15 +1,17 @@
+* {
+  font-family: Roboto;
+}
+
 header {
   display: flex;
   flex-direction: row;
-  justify-content:left;
+  justify-content: left;
   align-items: center;
   padding: 30px 0px;
 }
 
-
 .burguer-menu {
   background-color: green;
-
 }
 /*esto es el header? CREO */
 
@@ -31,7 +33,6 @@ header {
 
 .hero-img {
   display: none; /* No la mostramos porque usamos background-image */
-  
 }
 
 .hero-text {
@@ -55,18 +56,15 @@ header {
   width: 40px;
   margin-top: 30px;
   animation: bounce 1.5s infinite;
-
-
-
+}
 
 /*SECCIÓN DEPORTES */
 
 .vuelta-cole {
+  background-color: #d9e4cc;
   text-align: center;
   padding: 60px 20px;
-
 }
-
 
 .seccion-deportes {
   flex: 46px;
@@ -74,6 +72,10 @@ header {
   text-align: center;
   padding: 80px 20px;
   background-color: #green;
+}
+
+.texto-deportes {
+  text-align: left;
 }
 
 .deportes-subtitulo {
@@ -93,13 +95,16 @@ header {
   line-height: 1.6;
 }
 
-.boton-comprar {
-  background-color: #000;
-  color: #fff;
-  padding: 12px 30px;
+.comprar-boton a {
   text-decoration: none;
-  border-radius: 30px;
-  transition: background 0.3s;
+  color: #6c933e;
+  width: 184px;
+  height: 45px;
+  background-color: white;
+  border-radius: 22.5px;
+  padding: 5px 20px;
+  border-color: #6c933e;
+  border: solid;
 }
 
 .boton-comprar:hover {
@@ -131,21 +136,38 @@ header {
 }
 
 /* Fondo verde claro solo debajo de las fotos */
-.fotos-contenedor {
-  display: flex;             /* activa flexbox */
-  justify-content: center;   /* centra horizontalmente */
-  gap: 20px;                 /* espacio entre las fotos */
-  flex-wrap: wrap;      
-  background-color: #ffffff;    /* permite que se muevan a otra línea en móviles */
+.pics-container {
+  display: flex; /* activa flexbox */
+  justify-content: center; /* centra horizontalmente */
+  gap: 20px; /* espacio entre las fotos */
+  flex-wrap: wrap;
+}
+
+.pics-container article {
+  flex-direction: column;
+  display: flex;
 }
 
 .school-photo {
-  width: 200px;              /* ancho de cada foto */
-  height: 200px;             /* alto fijo para uniformidad */
-  object-fit: cover;         /* recorta la imagen si es necesario */
-  border-radius: 50%;        /* hace las fotos redondas */
+  width: 200px; /* ancho de cada foto */
+  height: 200px; /* alto fijo para uniformidad */
+  object-fit: cover; /* recorta la imagen si es necesario */
+  border-radius: 50%; /* hace las fotos redondas */
 }
 
+.empezar-ahora-boton a {
+  text-decoration: none;
+  color: white;
+  width: 184px;
+  height: 45px;
+  background-color: #6c933e;
+  border-radius: 22.5px;
+  padding: 5px 20px;
+}
+
+.empezar-ahora-boton {
+  margin: 13.5px;
+}
 
 .producto-nombre {
   display: block;
@@ -156,7 +178,7 @@ header {
 /* FOOTER*/
 
 .footer {
-  background-color: #000; /* fondo oscuro */
+  background-color: #4a4a4a; /* fondo oscuro */
   color: white;
   text-align: center;
   padding: 40px 20px;
@@ -189,7 +211,7 @@ header {
 /* Enlaces */
 .menu-link {
   text-decoration: none;
-  color: black;
+  color: #ffffff;
   font-size: 0.9rem;
   letter-spacing: 1px;
   transition: color 0.3s;
@@ -197,15 +219,19 @@ header {
 
 .menu-link:hover {
   color: #ffb400; /* cambia de color al pasar el ratón */
-
-  .footer {
+}
+.footer {
   background-color: #333333; /* gris oscuro */
   color: black;
   text-align: center;
   padding: 40px 20px;
+  flex-direction: row;
 }
 
-
+.footer-columns {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 /*VERSION TABLET: desde 768px en adelante */
 @media (min-width: 768px) {

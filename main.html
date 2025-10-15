@@ -10,6 +10,11 @@
   <title>Promo 58. Modulo 1. Evaluación final.</title>
   <!-- 3. Vamos a enlazar nuestro htnml con nuetsro fichero CSS.  -->
   <link rel="stylesheet" href="./main.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -37,20 +42,22 @@
     </section>
     <!-- LE DOY CLASE A SECTION y mas abajo al boton de comprar-->
     <section class="seccion-deportes">
-      <span class="seccion-deportes">HISTORIAS, MODA Y ROPA DEPORTIVA</span>.
+      <div class="texto-deportes">
+        <span>HISTORIAS, MODA Y ROPA DEPORTIVA</span>
 
+        <h2>TU TIENDA DE DEPORTE</h2>
 
-      <h2>TU TIENDA DE DEPORTE</h2>
-
-      <p>El deporte nos mantiene en forma. Nos mantiene alerta. Nuestra ropa deportiva para hombre y mujer te ofrece las
-        últimas tecnologías, a la altura de tu rendimiento, para que superes tu mejor marca personal.</p>
+        <p>El deporte nos mantiene en forma. Nos mantiene alerta. Nuestra ropa deportiva para hombre y mujer te ofrece
+          las
+          últimas tecnologías, a la altura de tu rendimiento, para que superes tu mejor marca personal.</p>
+      </div>
 
       <!-- Aqui pongo el Boton de Comprar-->
-      <a href="https://adalab.es" class="Comprar-boton">Comprar</a>
+      <div class="comprar-boton">
+        <a href="https://adalab.es">Comprar</a>
+      </div>
 
     </section>
-
-
 
     <!--Aqui pongo las 3 fotos de la sección junto con el botón empezar ahora
   y el icono o botón de la flecha arriba lo pongo en footer -->
@@ -59,7 +66,7 @@
       <h3>VUELTA AL COLE</h3>
 
 
-      <div class="fotos-contenedor">
+      <div class="pics-container">
         <article>
           <img class="school-photo" src="./images/lpbts-mod05-img01-desk.png" alt="school-photo" />
           <span>Mochilas escolares</span>
@@ -68,7 +75,7 @@
 
         <article>
           <img class="school-photo" src="./images/lpbts-mod05-img04-mob.png" alt="school-photo" />
-          <span>Mochilas escolares</span>
+          <span>Estuches</span>
         </article>
 
         <!-- Esto es el span con el producto-->
@@ -77,6 +84,10 @@
           <span>Bolsas de deporte</span>
         </article>
       </div>
+
+      <div class="empezar-ahora-boton">
+        <a href="https://adalab.es">Empezar ahora</a>
+      </div>
     </section>
   </main>
 
@@ -84,24 +95,29 @@
 
   <footer class="footer"> <!-- DAR CLASE A FOOTER -->
     <img class="icono-arrow-up" src="/images/ico-arrow.svg" alt="arrow-up">
-    <ul class="menu-list">
-      <li><a href="https://adalab.es" class="menu-link">ZAPATILLAS</a></li>
-      <li><a href="https://adalab.es" class="menu-link">ROPA</a></li>
-      <li><a href="https://adalab.es" class="menu-link">NIÑO/A</a></li>
-      <li><a href="https://adalab.es" class="menu-link">DESTACADOS</a></li>
-      <li><a href="https://adalab.es" class="menu-link">TIPS</a></li>
-    </ul>
-    <ul>
-      <li><a href="https://adalab.es" class="menu-link">TWITTER</a></li>
-      <li><a href="https://adalab.es" class="menu-link">INSTAGRAM</a></li>
-      <li><a href="https://adalab.es" class="menu-link">YOUTUBE</a></li>
-    </ul>
 
-    <!--SE PONE CON Small-->
-    <p>
-      <small>&copy; 2023</small>
-      <span>we💚run</span>
-    </p>
+    <div class="footer-columns">
+
+      <p>
+        <small>&copy; 2023</small>
+        <span>we💚run</span>
+      </p>
+
+      <ul>
+        <li><a href="https://adalab.es" class="menu-link">ZAPATILLAS</a></li>
+        <li><a href="https://adalab.es" class="menu-link">ROPA</a></li>
+        <li><a href="https://adalab.es" class="menu-link">NIÑO/A</a></li>
+        <li><a href="https://adalab.es" class="menu-link">DESTACADOS</a></li>
+        <li><a href="https://adalab.es" class="menu-link">TIPS</a></li>
+      </ul>
+      <ul>
+        <li><a href="https://adalab.es" class="menu-link">TWITTER</a></li>
+        <li><a href="https://adalab.es" class="menu-link">INSTAGRAM</a></li>
+        <li><a href="https://adalab.es" class="menu-link">YOUTUBE</a></li>
+      </ul>
+
+    </div>
+
 
   </footer>
 
