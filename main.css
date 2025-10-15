@@ -1,69 +1,92 @@
-/*list-style: none;  QUITA LOS PUNTITOS DEL LISTADO
- text-decoration: none; QUITA LA LINEA QUE SALE DE ABAJO DE LOS ENLACES*/
 .burguer-menu {
-  background: none; /* sin fondo */
-  border: none; /* sin borde */
-  padding: 0; /* quita relleno extra */
-  cursor: pointer; /* :apuntando_hacia_arriba_2: Truqui extra: el puntero cambia al pasar por encima */
-  position: absolute;
+}
 
+/*esto es el header? CREO */
 
+/* El hero debe ser maquetado con flexbox y debe ocupar todo el ancho de la página */
 
-/* El hero debe ser maquetado con flexbox y debe ocupar el */
-hero-button:{
+.hero-button {
   font:
   font-size:
   font-type:
   color:
   padding o marging? /*y despues preocuparnos de cómo poner unos al lado de otros*/
 }
+
+
 /* para poner un fondo de imagen en un contenedor con texto en CSS background-image */
 
-.background-image: {url: ./images .cover .jpeg;} /*PREGUNTAR A IVAN SI ESTO ESTA BIEN !!!*/
-background-size: cover;
-background-position: center; right -4.3rem;
-background-repeat: no-repeat; 
-
-
-.hero-img: {
+.hero {
+  text-align: center;
+  flex direction: colums;
+  align-items: center;
+  margin-block: 2rem;
 
 }
 
-.icono-scroll-down: {}
-
-.seccion-deportes: {}
-
-.titulo-secundario: {}
-
-.mochilas-escolares: {}
-
-.estuches: {}
-
-.bolsas-de-deporte: {}
-
-
-
-/*DAR CLASE A FOOTER */
-
-.icono-arrow-up: {}
-
-.zapatillas {}
-
-.ropa {}
-
-.niño-a {}
-
-.destacados {}
-
-.tips {}
-
+.fa-solid {
+color: white;
 
 
 }
 
+.fa-bars {
+}
+
+.hero {
+}
 
 
+/*esto es la seccion verde/*/
+.hero-img {
+  background-image: url("./images/cover.jpeg");
+  background-size: cover;
+  background-position: center right -4.3rem;
+  background-repeat: no-repeat;
+}
 
+.hero-text-1 {
+flex: 
+color: white;
+
+}
+
+.hero-text-2 {
+
+
+}
+
+.arrow-down {
+
+}
+
+.seccion-deportes {
+  color: #fff;
+  width: 320px;
+  height: 2033px;
+  position: relative;
+
+}
+
+.comprar-boton {
+
+}
+
+.school-photo {
+  border-radius: 50%;
+}
+
+.icono-arrow-up {
+}
+
+
+/* esto es el footer */
+.menu-link {
+  color: black;
+  text-decoration: none;
+
+
+}
 
 /*VERSION TABLET: desde 768px en adelante */
 @media (min-width: 768px) {

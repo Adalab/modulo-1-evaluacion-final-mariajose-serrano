@@ -14,10 +14,12 @@
 
 <body>
   <header>
-    <!--1. Meto aqui el menu hamburguesa que debe estar a la izq.
-      y debe tener un enlace a la web de adalab https://adalab.es -->
-    <a href="https://adalab.es"></a> <img class="burguer-menu" src="./images/ico-menu.svg" alt="burguer-menu">
-    <img class="hero-button">
+    <!--1. MENU HAMBURGUESA FIJO con enlace a adalab-->
+
+    <a href="https://adalab.es"><img class="burguer-menu" src="./images/ico-menu.svg" alt="burguer-menu">
+      <img class="hero-button">
+      <i class="fa-solid fa-bars"></i>
+    </a>
 
 
   </header>
@@ -25,26 +27,31 @@
     <section class="hero" id="hero">
       <img class="hero-img" src="./images/cover.jpeg" alt="hero background" /> <!--1 Poner en el CSS BACKGROUND-IMAGE: url(donde tengo la img en mi carpeta ./)
     -->
-      <Titulo>COMIENZOS COMPARTIDOS</Titulo>
-      <span>Todo lo que necesitan para volver al cole con ilusión</span>
-      <img class="icono-scroll-down" src="./images/ico-scroll-down.svg" alt="icono-scroll-down">
+      <span class="hero-text-1">COMIENZOS</span>
+      <span class="hero-text-1">COMPARTIDOS</span>
 
-      <!-- aqui la flecha ha de llevar a Vuelta al cole PREGUNTAR AVERIGUAR COMO HACER ESO-->
+      <spap class="hero-text-2">Todo lo que necesitan para volver al cole con ilusión</span>
+        <img class="arrow-down" src="./images/ico-scroll-down.svg" alt="icono-scroll-down">
+
+        <!-- aqui la flecha ha de llevar a Vuelta al cole PREGUNTAR AVERIGUAR COMO HACER ESO-->
 
     </section>
     <!-- LE DOY CLASE A SECTION y mas abajo al boton de comprar-->
     <section class="seccion-deportes">
-      <span class="titulo-secundario">HISTORIAS, MODA Y ROPA DEPORTIVA</span>.
+      <span class="seccion-deportes">HISTORIAS, MODA Y ROPA DEPORTIVA</span>.
 
 
       <h2>TU TIENDA DE DEPORTE</h2>
 
       <p>El deporte nos mantiene en forma. Nos mantiene alerta. Nuestra ropa deportiva para hombre y mujer te ofrece las
         últimas tecnologías, a la altura de tu rendimiento, para que superes tu mejor marca personal.</p>
+
+      <!-- Aqui pongo el Boton de Comprar-->
+      <a href="https://adalab.es" class="Comprar-boton">Comprar</a>
+
     </section>
 
-    <!-- Aqui pongo el Boton de Comprar-->
-    <a href="https://adalab.es" class="Comprar-boton">Comprar</a></section>
+
 
     <!--Aqui pongo las 3 fotos de la sección junto con el botón empezar ahora
   y el icono o botón de la flecha arriba lo pongo en footer -->
@@ -54,19 +61,19 @@
 
 
       <article>
-        <img class="mochilas-escolares" src="./images/lpbts-mod05-img01-desk.png" alt="mochilas-escolares" />
+        <img class="school-photo" src="./images/lpbts-mod05-img01-desk.png" alt="school-photo" />
         <span>Mochilas escolares</span>
       </article>
       <!-- Esto es el span con el producto-->
 
       <article>
-        <img class="estuches" src="./images/lpbts-mod05-img04-mob.png" alt="estuches" />
+        <img class="school-photo" src="./images/lpbts-mod05-img04-mob.png" alt="school-photo" />
         <span>Mochilas escolares</span>
       </article>
 
       <!-- Esto es el span con el producto-->
       <article>
-        <img class="bolsas de deporte" src="./images/lpbts-mod05-img03-mob.png" alt="bolsas de deporte" />
+        <img class="school-photo" src="./images/lpbts-mod05-img03-mob.png" alt="school-photo" />
         <span>Bolsas de deporte</span>
       </article>
       <!-- Esto es el span con el producto-->
@@ -76,22 +83,24 @@
 
   <footer> <!-- DAR CLASE A FOOTER -->
     <img class="icono-arrow-up" src="/images/ico-arrow.svg" alt="arrow-up">
-    <ul>
-      <li><a href="https://adalab.es" class="zapatillas">ZAPATILLAS</a></li>
-      <li><a href="https://adalab.es" class="ropa">ROPA</a></li>
-      <li><a href="https://adalab.es" class="niño/a">NIÑO/A</a></li>
-      <li><a href="https://adalab.es" class="destacados">DESTACADOS</a></li>
-      <li><a href="https://adalab.es" class="tips">TIPS</a></li>
+    <ul> class="menu-list"
+      <li><a href="https://adalab.es" class="menu-link">ZAPATILLAS</a></li>
+      <li><a href="https://adalab.es" class="menu-link">ROPA</a></li>
+      <li><a href="https://adalab.es" class="menu-link">NIÑO/A</a></li>
+      <li><a href="https://adalab.es" class="menu-link">DESTACADOS</a></li>
+      <li><a href="https://adalab.es" class="menu-link">TIPS</a></li>
     </ul>
     <ul>
-      <li><a href="https://adalab.es" class="twitter">TWITTER</a></li>
-      <li><a href="https://adalab.es" class="instagram">INSTAGRAM</a></li>
-      <li><a href="https://adalab.es" class="youtube">YOUTUBE</a></li>
+      <li><a href="https://adalab.es" class="menu-link">TWITTER</a></li>
+      <li><a href="https://adalab.es" class="menu-link">INSTAGRAM</a></li>
+      <li><a href="https://adalab.es" class="menu-link">YOUTUBE</a></li>
     </ul>
 
-    <!--pREGUNTAR A IVAN SI ESO SE PONE CON Small o con span-->
-    <small>&copy; 2023</small>
-    <span>we💚run</span>
+    <!--SE PONE CON Small-->
+    <p>
+      <small>&copy; 2023</small>
+      <span>we💚run</span>
+    </p>
 
   </footer>
 
