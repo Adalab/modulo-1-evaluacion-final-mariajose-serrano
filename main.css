@@ -1,92 +1,211 @@
-.burguer-menu {
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content:left;
+  align-items: center;
+  padding: 30px 0px;
 }
 
+
+.burguer-menu {
+  background-color: green;
+
+}
 /*esto es el header? CREO */
 
 /* El hero debe ser maquetado con flexbox y debe ocupar todo el ancho de la página */
-
-.hero-button {
-  font:
-  font-size:
-  font-type:
-  color:
-  padding o marging? /*y despues preocuparnos de cómo poner unos al lado de otros*/
-}
-
-
-/* para poner un fondo de imagen en un contenedor con texto en CSS background-image */
-
 .hero {
-  text-align: center;
-  flex direction: colums;
-  align-items: center;
-  margin-block: 2rem;
-
-}
-
-.fa-solid {
-color: white;
-
-
-}
-
-.fa-bars {
-}
-
-.hero {
-}
-
-
-/*esto es la seccion verde/*/
-.hero-img {
+  position: relative;
+  width: 100%;
+  height: 90vh;
   background-image: url("./images/cover.jpeg");
   background-size: cover;
-  background-position: center right -4.3rem;
-  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-img {
+  display: none; /* No la mostramos porque usamos background-image */
+  
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-text-1 {
-flex: 
-color: white;
-
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .hero-text-2 {
-
-
+  font-size: 1.2rem;
+  margin-top: 10px;
+  max-width: 600px;
 }
 
 .arrow-down {
+  width: 40px;
+  margin-top: 30px;
+  animation: bounce 1.5s infinite;
+
+
+
+
+/*SECCIÓN DEPORTES */
+
+.vuelta-cole {
+  text-align: center;
+  padding: 60px 20px;
 
 }
+
 
 .seccion-deportes {
-  color: #fff;
-  width: 320px;
-  height: 2033px;
-  position: relative;
-
+  flex: 46px;
+  font: roboto;
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #green;
 }
 
-.comprar-boton {
+.deportes-subtitulo {
+  font-size: 1.2rem;
+  color: #666;
+}
 
+.deportes-titulo {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: #222;
+}
+
+.deportes-texto {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.boton-comprar {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+.boton-comprar:hover {
+  background-color: #333;
+}
+
+/* ===================
+   SECCIÓN VUELTA AL COLE
+=================== */
+.vuelta-cole {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.vuelta-subtitulo {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.vuelta-titulo {
+  font-size: 2rem;
+  margin: 10px 0 40px;
+  color: #222;
+}
+
+.producto {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Fondo verde claro solo debajo de las fotos */
+.fotos-contenedor {
+  display: flex;             /* activa flexbox */
+  justify-content: center;   /* centra horizontalmente */
+  gap: 20px;                 /* espacio entre las fotos */
+  flex-wrap: wrap;      
+  background-color: #ffffff;    /* permite que se muevan a otra línea en móviles */
 }
 
 .school-photo {
-  border-radius: 50%;
+  width: 200px;              /* ancho de cada foto */
+  height: 200px;             /* alto fijo para uniformidad */
+  object-fit: cover;         /* recorta la imagen si es necesario */
+  border-radius: 50%;        /* hace las fotos redondas */
 }
 
+
+.producto-nombre {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* FOOTER*/
+
+.footer {
+  background-color: #000; /* fondo oscuro */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+}
+
+/* Icono de flecha hacia arriba */
 .icono-arrow-up {
+  width: 40px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
 }
 
+.icono-arrow-up:hover {
+  transform: translateY(-5px); /* se eleva un poco al pasar el ratón */
+}
 
-/* esto es el footer */
+/* Listas del menú */
+.menu-list {
+  list-style: none; /* quita los puntos */
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Enlaces */
 .menu-link {
-  color: black;
   text-decoration: none;
-
-
+  color: black;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: color 0.3s;
 }
+
+.menu-link:hover {
+  color: #ffb400; /* cambia de color al pasar el ratón */
+
+  .footer {
+  background-color: #333333; /* gris oscuro */
+  color: black;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+
 
 /*VERSION TABLET: desde 768px en adelante */
 @media (min-width: 768px) {
